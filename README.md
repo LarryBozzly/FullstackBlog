@@ -1,4 +1,4 @@
-This project is using Express - Node.js,React Js and MySQL. It is a blog website with an admin panel where you can write Posts and upload Images.
+This project is using Express - Node.js,React Js and MySQL. It is a blog website with an admin panel where you can write posts and upload images with the use of Firebase Storage.
 
 ## Available Scripts
 
