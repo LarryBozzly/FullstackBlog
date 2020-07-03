@@ -1,0 +1,286 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.wrapper2{
+    display: flex;
+    flex-direction: column;
+}
+.back_intro_header{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    white-space: wrap;
+    background: linear-gradient(180deg, rgba(255,255,255,0.5) 4%, rgba(255,255,255,0.5) 34%, rgba(96,95,95,0.6) 100%);
+    animation-name: animheader;
+    animation-duration: 0.7s;
+    font-size: 5.6rem;
+    text-align: center;
+    color: rgba(0,0,0,1);
+}
+.back_intro_header2
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0%;
+    color: transparent;
+    text-align: center;
+    justify-content: center;
+    white-space: wrap;
+    background: linear-gradient(180deg, rgba(255,255,255,0.5) 4%, rgba(255,255,255,0.5) 34%, rgba(96,95,95,0.6) 100%);
+    animation-name: animheader2;
+    font-size: 0px;
+    animation-duration: 0.7s;
+    color: rgba(0,0,0,1);
+    text-align: center;
+}
+
+/* ANIMATIONS */
+@keyframes animheader {
+    100% { width: 100%;}
+    30%{color: transparent;}
+    0%   { width: 0%;color: transparent;font-size: 0px;}
+  }
+
+  @keyframes animheader2 {
+    100% { width: 0%;color: transparent;}
+    50%{color: transparent;margin-left: 30%;}
+    30%{color: transparent;}
+    0% { width: 100%;font-size: 5.6rem;}
+  }
+@media screen and (max-width:450px)
+{
+    .back_intro_header{
+        font-size: 4.3rem;
+    }
+}
+@media screen and (max-width:1120px){
+    .wrapper{
+        flex-direction: column;    
+    }
+    .Recent{ 
+        padding: 1.2rem .6rem;
+    }
+}
+@media screen and (min-width:850px){
+    .blog-post2{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .blog-post__title2{
+        margin-left: 10vw;
+
+    }
+    .blog-post__date2{
+        margin-left: 10vw;
+    }
+}
+/* ANIMATIONS */
+.TextHighlight:hover{
+    cursor: pointer;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;  
+    color: rgb(65, 63, 63);
+}
+.TextHighlight:active{
+    color: rgb(156, 155, 155);
+    cursor: pointer;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;  
+}
+.bannerimg{
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    display: block;
+    margin-top: 0.6%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.back_101img{
+    flex:1;
+    width: 100%;
+    background-image: url("../images/back_101.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: repeat;
+}
+.back_intro{
+    flex:1;
+    height: 45vw;
+    min-height: 550px;
+    width: 100%;
+    background-image: url("../images/desktop.jpg"); 
+    background-color: white;
+    background-size: cover;
+    background-position: left;
+    background-repeat: repeat; 
+}
+.blog-post{
+    align-content: center;
+    align-items: center;
+    flex:3;  
+}
+.blog-post2{
+    align-content: center;
+    align-items: center;
+}
+.blog-post__content{
+    font-size: 1.4rem;
+    padding: .2rem .6rem;
+    white-space: pre-line;
+    word-break:break-word;
+    background: rgba(241, 241, 241,0.7);
+    border: 1px solid #E1E1E1;	
+    border-radius: 3px; 
+    min-height: 98%;
+}
+.blog-post__content2{
+    font-size: 1.4rem;
+    padding: .2rem .6rem;
+    white-space: pre-line;
+    word-break:break-word;
+    background: rgba(241, 241, 241,0.7);
+    border: 1px solid #E1E1E1;	
+    border-radius: 3px;
+}
+.footer-wrapper{
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background:  #94c7c2;
+    box-shadow: 1px 2px 4px #000000;
+    text-shadow:1px 2px 4px #000000;
+}
+.Recent{
+    flex:1;
+    font-size: 1.4rem;
+    padding: 4.2rem .6rem;
+    white-space: wrap;
+    background: rgba(241, 241, 241,0.7);
+    border: 1px solid #E1E1E1;	
+    border-radius: 3px;
+    text-align: left;
+}
+.RecentHeadline{
+    text-align: center;
+    font-size: 2.0rem;
+}
+.blog-post__header{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    padding: .2rem .6rem;
+    line-height: 2.7rem;
+    white-space: wrap;
+    text-align: left;
+}
+.ReadMore{
+    font-size: 2rem;
+    font-weight: bold;
+} 
+.ReadMore:hover{
+    cursor: pointer;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;  
+    padding-left: 12px;
+    color: rgb(83, 81, 81);
+}
+.ReadMore:active{
+    cursor: pointer;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;  
+    color: rgb(156, 155, 155);
+}
+.changePage-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+.changePageBoard{
+    width: 160px;
+    height: 40px; 
+    background: rgba(241, 241, 241,0.7);	
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    justify-content: space-around;
+    color: black;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.changePageBoardButton
+{
+    height:100%;
+    display: flex;
+    height: 60%;
+}
+.changePageBoardButton:hover{
+    cursor: pointer;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;  
+    color: rgb(83, 81, 81);
+}
+.changePageNumber
+{   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    align-self: center;
+    font-size: 60%;
+}
+.changePageNumberMin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    align-self: center;
+    font-size: 60%;
+    margin-left: 20px;
+}
+.changePageNumberMax{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    align-self: center;
+    font-size: 60%;
+    margin-right: 20px;
+}

@@ -1,0 +1,166 @@
+.About{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.About-Header-Container{
+    flex:1;
+    background-image: url("../images/back_101.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: repeat;
+    font-size: 1.1rem;
+    border: 25px solid rgb(197, 197, 197);
+}
+.About-Header-Box
+{
+    text-align: center;
+}
+.About-Mini-Title{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5); 
+    background: rgba(255, 255, 255,0.6);
+    box-shadow: 1px 1px 8px #858484;
+}
+.About-MiniBox{
+    text-shadow:none;
+    text-align: left;
+    color: black;
+    background: rgba(255, 255, 255,0.6);
+    box-shadow: 1px 1px 8px #858484;
+    border: 2px solid rgb(161, 161, 161);	
+    border-radius: 20px;
+    font-size: 20px;
+    white-space: pre-line;
+    word-break:break-word;
+    padding: .2rem .6rem;
+    -webkit-animation: dropdown 1.0s forwards; 
+    animation: dropdown 1.0s forwards;
+}
+.About-MiniBox2{
+    text-shadow:none;
+    text-align: left;
+    color: black;
+    background: rgba(255, 255, 255,0.6);
+    box-shadow: 1px 1px 8px #858484;
+    border: 2px solid rgb(161, 161, 161);	
+    border-radius: 20px;
+    font-size: 20px;
+    white-space: pre-line;
+    word-break:break-word;
+    padding: .2rem .6rem;
+    -webkit-animation: dropdown 1.0s forwards; 
+    animation: dropdown 1.0s forwards;
+}
+.About-MiniBox3{
+    background: rgba(255, 255, 255,0.6);
+    box-shadow: 1px 1px 8px #858484;
+    border: 2px solid rgb(161, 161, 161);	
+    border-radius: 20px;
+    width: 100%;
+    -webkit-animation: dropdown 1.0s forwards; 
+    animation: dropdown 1.0s forwards;
+}
+.About-MiniBoxNoAnimate{
+    text-shadow:none;
+    text-align: left;
+    color: black;
+    background: rgba(255, 255, 255,0.6);
+    box-shadow: 1px 1px 8px #858484;
+    border: 2px solid rgb(161, 161, 161);		
+    border-radius: 20px;
+    font-size: 20px;
+    white-space: pre-line;
+    word-break:break-word;
+    padding: .2rem .6rem;
+    opacity: 0;  
+}
+.About-MiniBoxBackwards{
+    text-shadow:none;
+    text-align: left;
+    color: black;
+    background: rgba(255, 255, 255,0.6);
+    box-shadow: 1px 1px 8px #858484;
+    border: 2px solid rgb(161, 161, 161);	
+    border-radius: 20px;
+    font-size: 20px;
+    white-space: pre-line;
+    word-break:break-word;
+    padding: .2rem .6rem;  
+    -webkit-animation: dropdownbackward 1.0s forwards; 
+    animation: dropdownbackward 1.0s forwards;
+}
+@keyframes dropdown {
+    0%   {opacity: 0;transform:translateY(-20%); }
+    40%   {opacity: 1;}
+    100% {opacity: 1;transform:translateY(0%);}
+  } 
+  @keyframes dropdownbackward {
+    0%   {opacity: 1; transform:translateY(0%);}
+    40%   {opacity: 0;}
+    100% {opacity: 0; transform:translateY(-20%); }
+  } 
+@media screen and (min-width: 1000px) {
+    /* UNDER 1000px CSS here */
+    .About-MiniBox{
+        margin-left: 50%;
+    }
+    .About-MiniBoxBackwards{
+        margin-left: 50%;
+    }
+    .About-MiniBoxNoAnimate{
+        margin-left: 50%;
+    }
+    .About-MiniBox2{
+        margin-right: 50%;
+    }
+    .About-MiniBox3{
+        margin-left: 50%;
+    }
+  }
+.About-Container-Allign{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  .About-Container-Allign2{
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  .About-img{
+      border-radius:15px;
+  }
+  .About-crossing
+  {
+      text-shadow:1px 1px 4px #000000;
+      font-size: calc(1vw + 5vh); 
+  }
+  .About-crossing-container{
+      width: 100%;
+      height: 1vh;
+  }
+  .about-fade-crossing{
+    -webkit-animation: fadein 1s forwards; 
+    animation: fadein 1s forwards;
+  }
+  .about-fadeout-crossing{
+    -webkit-animation: fadeout 0.41s forwards; 
+    animation: fadeout 0.41s forwards;
+  }
+  @keyframes fadeout {
+    0%   {opacity: 1;}
+    100% {opacity: 0;}
+  } 
+  @keyframes fadein {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  } 
+

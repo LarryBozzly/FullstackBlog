@@ -1,0 +1,229 @@
+.frame{
+    display:flex;
+    margin: 7%;
+    min-width: 260px;
+    min-height: 500px;
+    align-content: center;
+    align-items: center;
+    background:#b5d6d3;
+    color: white;
+    box-shadow: 1px 2px 4px #000000;
+    text-shadow:1px 2px 4px #000000;
+}
+.table{
+    display: flex;
+    width: 100%;
+    align-self: flex-start;
+    flex-direction: column;
+}
+.list{
+    list-style-type: "- ";
+    flex:1;
+    flex-direction: row;
+    background:  #94c7c2;
+    margin-left: 1%;
+    margin-right: 1%;  
+}
+.listitem{
+    width: 90%;
+    margin: 2%;
+    font-size: 18px;
+    text-align: left;
+    overflow-wrap: break-word;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+     user-select: none;                              
+}
+@keyframes enablePost{
+    from {margin-top: -3%;
+        color: rgba(255, 255, 255, 0);   
+    }
+    to {margin-top: 2%;}
+}
+.post{
+    overflow-wrap: break-word;
+    white-space: pre-line;
+    animation-name: enablePost;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.listitem:hover{
+    background:#2a6c96;
+    cursor: pointer;
+}
+.delete-icon{
+    flex:1;
+    background:#205575;
+    flex-direction: row;
+    width: 2%;
+    min-width: 20px;
+    min-height: 20px;
+    margin-left: 101%; 
+    text-align: center;
+    margin-top: -24px;
+    font-weight: bold;
+    font-size: 130%;
+}
+@keyframes enrlg {
+    from {width: 2%;}
+    to {width: 5%;}
+  }
+.delete-icon:hover{
+    animation-name: enrlg;
+    animation-duration: 0.05s;
+    animation-fill-mode: forwards;
+}
+@media screen and (max-width:350px){
+    .delete-icon{
+        text-align: center;
+        font-size: 80%;
+        margin-left: 100%; 
+    }
+}
+.buttonAddMore{
+ flex: 1;
+ width: 30%;
+ align-self: center;
+ align-content: center;
+ text-align: center;
+ background:#205575;
+ padding: 20px;
+ border-radius: 5px;
+ border: none;
+ color: white;
+ box-shadow: 1px 2px 4px #000000;
+ text-shadow:1px 2px 4px #000000;
+ font-size: 40px;
+ font-weight: bold;
+ margin-bottom: 10px;
+ cursor: pointer;
+ -webkit-user-select: none;        
+-moz-user-select: none; 
+-ms-user-select: none; 
+-o-user-select: none;
+user-select: none;  
+}
+.buttonAddMore:hover{
+    outline: none;
+    animation-name: enrlg2;
+    animation-duration: 0.05s;
+    animation-fill-mode: forwards;
+}
+@keyframes enrlg2 {
+    from {width: 30%;
+    }
+    to {width: 35%;  
+    }
+  }
+.inputPost{
+    width: 90%;
+    height: 150px;
+    margin-bottom: 15px;
+    padding: 5px 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: monospace;
+    cursor: text;
+  }
+.inputHeader{
+    width: 90%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 5px 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: monospace;
+    cursor: text;
+}
+.inputPost:focus{
+    border: 3px solid #5f9fc7;
+  }
+.inputHeader:focus{
+    border: 3px solid #5f9fc7;
+}
+.inputsAll{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+.cancelButton{
+    flex: 1;
+    width: 10%;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    background:#205575;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    box-shadow: 1px 2px 4px #000000;
+    text-shadow:1px 2px 4px #000000;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;        
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    -o-user-select: none;
+    user-select: none;
+}
+.cancelButton:hover{
+    animation-name: enrlg3;
+    animation-duration: 0.05s;
+    animation-fill-mode: forwards;
+}
+@keyframes enrlg3 {
+    from {width: 10%;
+    }
+    to {width: 15%;  
+    }
+  }
+.inputImage{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1; 
+}
+.LabelFile{
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 20vh;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    background:#205575; 
+    border-radius: 5px;
+    border: none;
+    color: white;
+    box-shadow: 1px 2px 4px #000000;
+    text-shadow:1px 2px 4px #000000;
+    margin-bottom: 4px;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    -o-user-select: none;
+    user-select: none;
+}
+.progressBar{
+    width: 40vh;
+    border-radius: 25px;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+.style-svg{
+    fill:white;
+    filter: drop-shadow( 1px 2px 4px #000000);
+}
