@@ -1,6 +1,7 @@
 This project is using Express - Node.js,React Js and MySQL. It is a blog website with an admin panel where you can write posts and upload images with the use of Firebase Storage.
 
-## https://routing-1555560919514.web.app/ Project Link
+## Website Link
+https://routing-1555560919514.web.app/
 
 ## Available Scripts
 
